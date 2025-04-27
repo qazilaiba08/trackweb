@@ -2,15 +2,17 @@ import express from 'express';
 import cors from 'cors';
 import connectToDb from './config/db.js';
 import rourter from './routes/authRoutes.js';
+import path from 'path';
 
 const app = express();
 const port = process.env.PORT || 5001;
 
 app.use(cors({
-    origin: 'http://localhost:5173/',
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://trackweb-production.up.railway.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
+
 
 app.use(express.json());
 connectToDb();

@@ -24,14 +24,7 @@ const Home = () => {
         <button className="bg-[#43b7db] text-white py-2 px-4 md:px-6 rounded-xl font-semibold hover:bg-blue-600 transition mt-4">
           Learn More
         </button>
-       < div className="flex items-end justify-end mt-6 px-4">
-       
-       <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMKShIwJ6acOPdXZGr0jwV7J0Gh7ZOGOVWw&s"
-          alt="TaskIT Logo"
-          className="w-24 h-24 md:w-32 md:h  rounded-2xl shadow-lg"
-        />
-       </div>
+  
        
       </div>
       </div>
